@@ -11,11 +11,24 @@ Analysis of production line efficiency and operator performance for a soda bottl
 3. What are the leading factors for downtime?
 4. Do any operators struggle with particular types of errors?
 
-## Key Findings
-- **Line efficiency: 67.1%** with 33% productivity loss due to downtime
-- **Product spills** are the #1 cause of downtime (338 minutes)
-- **Mac underperforms** at 63.3% efficiency vs Charlie's 71.0%
-- **Operator-specific error patterns identified** enabling targeted training
+## Analysis Results
+
+### 1. What's the current line efficiency?
+**67.1% overall efficiency**, with the line running at theoretical capacity when actively producing. All efficiency loss (33%) is attributable to downtime events, representing significant recovery potential.
+
+### 2. Are any operators underperforming?
+Yes. **Mac is the lowest performer at 63.3% efficiency** with 41.5 minutes average downtime per batch, compared to top performer **Charlie at 71.0% efficiency** with 34.9 minutes average downtime. This represents a 7.7 percentage point performance gap.
+
+### 3. What are the leading factors for downtime?
+- **Product Spill (338 minutes)** - Operator error, #1 cause
+- **Machine Failure (261 minutes)** - Equipment issue
+- **Inventory Shortage (229 minutes)** - Supply chain issue
+
+### 4. Do any operators struggle with particular types of errors?
+Yes, clear patterns emerged:
+- **Mac:** Struggles with Batch Changes (130 min) and Batch Code Errors (47 min)
+- **Charlie & Dennis:** Both struggle with Machine Adjustments (118 and 120 min respectively)
+- **Dee:** Shows distributed errors across multiple categories with no single dominant issue
 
 ## Tools Used
 - Microsoft Excel
@@ -23,7 +36,7 @@ Analysis of production line efficiency and operator performance for a soda bottl
 - Visualization: Column charts, stacked bar charts
 
 ## Files
-- `manufacturing-downtime-analysis.xlsx` - Full analysis with Dashboard tab
+- `Manufacturing_Line_Productivity.xlsx` - Full analysis with Dashboard tab
 
 ## Recommendations
 Immediate Actions (0-30 days):
